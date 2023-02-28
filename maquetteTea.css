@@ -3,7 +3,41 @@
    padding: 0;
 }
 
-nav{
-margin: 100 px auto;
-width:50
+/* nav{
+
+} */
+
+#image{
+   height: 50vh;
+   background-image: url(./assets/main-bcg.jpeg);
+  background-size: cover ;
 }
+
+img{
+   height: 60px;
+   width: 60px;
+}
+
+label[for="burger"]{
+   font-size: 2.5rem;
+}
+ul, #burger{
+   display: none;
+}
+#burger:checked + ul{
+   display: block;
+}
+@media screen and (min-width: 900px){
+   label[for="burger"]{
+       display: none;
+   }
+   ul{
+       display: block;
+   }
+   li{  
+       display:  inline-block;
+       width: 17vw;
+       text-align: center;
+   }
+}
+
